@@ -1,3 +1,4 @@
+import Util.ReadAndWrite;
 import models.Products;
 import org.junit.Test;
 
@@ -9,8 +10,8 @@ import static org.junit.Assert.assertNotNull;
 
 public class ReadAndWriteTest {
     @Test
-    void testReadProductsFromCSV() throws IOException{
-        CSVProductReader reader= new CSVProductReader();
+    public void testReadProductsFromCSV() throws IOException{
+        ReadAndWrite reader= new ReadAndWrite();
         String filepath= "src/resources/filesForProducts.csv";
 
         List<Products> products= reader.readProductsFromCSV(filepath);

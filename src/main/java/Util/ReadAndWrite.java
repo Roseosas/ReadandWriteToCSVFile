@@ -5,11 +5,10 @@ import models.Products;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReadandWrite {
+public class ReadAndWrite {
     public List<Products> readProductsFromCSV(String filePath) throws IOException {
         List<Products> products = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -36,4 +35,5 @@ public class ReadandWrite {
         }
         return products;
     }
+}
 }
