@@ -18,7 +18,14 @@ public class ReadAndWriteTest {
         assertNotNull(products);
         assertEquals(3,products.size());
 
-        Products firstProduct= products.get(0);
+        Products firstProduct= products.getFirst();
+        assertEquals("Soda",firstProduct.getProductName());
+        assertEquals(200.00, firstProduct.getUnitPrice());
+        assertEquals("Beverages", firstProduct.getCategory());
+        assertEquals("IN STOCK", firstProduct.getStockStatus());
+
+        Products outOfStockProduct = products.get(2);
+        assertEquals("OUT OF STOCK", outOfStockProduct.getStockStatus());
 
     }
 

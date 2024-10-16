@@ -2,4 +2,8 @@ productName,unitPrice,Quantity,Stock,Category
 Soda,200.00,20,Beverages
 chips,50.00,5,Snacks
 Juice,250.00,10,Beverages
-Candy,50.0,20,sweets
+Candy,50.0,20,Sweets
+Rice,200.00,30,Grains
+Indomie,200.00,10,Noodles
+Sugar,100.00,0,Beverages
+Milk,100.00,0,Beverages

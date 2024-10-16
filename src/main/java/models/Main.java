@@ -11,12 +11,11 @@ import static enums.Position.Manager;
 public class Main {
     public static void main(String[] args) {
         List<Products> newListOfProducts = new ArrayList<>();
-        newListOfProducts.add(new Products("Rice", 2000.00, 50, 100));
-        newListOfProducts.add(new Products("Beans",2000.00, 10, 20));
-        newListOfProducts.add(new Products("Milk", 100.00, 20, 5));
-        newListOfProducts.add(new Products("Cereal",200.00, 10, 10));
-        newListOfProducts.add(new Products("Noodles", 10000.00, 5, 14));
-        newListOfProducts.add(new Products("Sugar", 100.00, 6, 26));
+        newListOfProducts.add(new Products("Soda", 200.00, 30, "Beverages","IN STOCK"));
+        newListOfProducts.add(new Products("Rice",2000.00, 10, "Grains","IN STOCK"));
+        newListOfProducts.add(new Products("Milk", 100.00, 0, "Beverages","OUT OF STOCK"));
+        newListOfProducts.add(new Products("Indomie",200.00, 10, "Noodles", "IN STOCK"));
+        newListOfProducts.add(new Products("Sugar", 100.00, 0, "Beverages","OUT OF STOCK"));
         List<Staff> newListOfStaff = new ArrayList<>();
         newListOfStaff.add(new Staff("S001", "HOPE EGHOSA", 25, Male, "LAGOS", "OND", 50000, Cashier, 20));
         newListOfStaff.add(new Staff("S002", "OSAGIE HAPPINESS",21, Female, "ABUJA NIGERIA", "OLEVEL", 25000, Cashier,11));
